@@ -4,6 +4,8 @@ import pandas as pd
 
 
 sort_passengers_by_avg_grade = pd.read_csv('..//data/titanic.csv')
+# result = sort_passengers_by_avg_grade.to_json(orient='records', indent=4)
+
 
 new_sort = sort_passengers_by_avg_grade.groupby('Sex')['Age'].mean()
 
